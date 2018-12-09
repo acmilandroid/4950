@@ -1,0 +1,40 @@
+%% overall test run
+% team 1 is robot's team
+clear all;
+clc;
+close all;
+
+topleft = [93,37];
+bottomright = [522,465];
+cam = webcam('USB Video Device');
+
+%rtwbuild('dc_motor_encoder_hardware_simulated');
+%tg.load('dc_motor_encoder_hardware_simulated');
+%tg.start
+
+dowel = shape_detection(topleft, bottomright, cam);
+
+% dowel = set_piece(dowel,1,1,1,1);
+% dowel = set_piece(dowel,1,2,2,1);
+ dowel = set_piece(dowel,1,3,3,1); %red triangle
+% dowel = set_piece(dowel,2,1,2,1);
+% dowel = set_piece(dowel,2,2,5,1);
+ dowel = set_piece(dowel,2,3,6,1);
+% 
+% %set team 2
+% dowel = set_piece(dowel,3,1,1,2);
+% dowel = set_piece(dowel,3,2,2,2); 
+ dowel = set_piece(dowel,3,3,1,2);
+% dowel = set_piece(dowel,4,1,1,1);
+% dowel = set_piece(dowel,4,2,5,2);
+ dowel = set_piece(dowel,4,3,5,1);
+
+
+board = make_board(topleft, bottomright, dowel);
+
+moves = get_moves(board);
+killer = kill(moves,[7,4]);
+defend = defend(moves);
+[piece,position] = get_check(moves);
+
+

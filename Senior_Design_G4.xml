@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+      		<SubSystem>
+		<Name>DC Motor Controller</Name>
+		<xPCName>Senior_Design_G4/DC Motor Controller</xPCName>
+				<SubSystem>
+		<Name>Real motor</Name>
+		<xPCName>Senior_Design_G4/DC Motor Controller/Real motor</xPCName>
+		
+		
+            <block>
+            <blkName>angular_position = 
+[relative_count//COUNTS_PER_REV] *360 degrees</blkName>
+            <xpcblkName>DC Motor Controller/Real motor/angular_position =  [relative_count//COUNTS_PER_REV] *360 degrees</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Real motor/angular_position =  [relative_count//COUNTS_PER_REV] *360 degrees</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Saturation</blkName>
+            <xpcblkName>DC Motor Controller/Real motor/Saturation</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Real motor/Saturation</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>UpperLimit</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>LowerLimit</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Channel 0 -Control signal to 
+motor through amplifier </blkName>
+            <xpcblkName>DC Motor Controller/Real motor/Channel 0 -Control signal to  motor through amplifier </xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Real motor/Channel 0 -Control signal to  motor through amplifier </SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Channel 0 of 
+Encoder Inputs </blkName>
+            <xpcblkName>DC Motor Controller/Real motor/Channel 0 of  Encoder Inputs </xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Real motor/Channel 0 of  Encoder Inputs </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P12</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>angular_position = 
+[relative_count//COUNTS_PER_REV] *360 degrees</sigName>
+              <xpcsigName>DC Motor Controller/Real motor/angular_position =  [relative_count//COUNTS_PER_REV] *360 degrees</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Saturation</sigName>
+              <xpcsigName>DC Motor Controller/Real motor/Saturation</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Channel 0 of 
+Encoder Inputs </sigName>
+              <xpcsigName>DC Motor Controller/Real motor/Channel 0 of  Encoder Inputs </xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Real motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Simulated motor</Name>
+		<xPCName>Senior_Design_G4/DC Motor Controller/Simulated motor</xPCName>
+		
+		
+            <block>
+            <blkName>Back emf Ke1</blkName>
+            <xpcblkName>DC Motor Controller/Simulated motor/Back emf Ke1</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Simulated motor/Back emf Ke1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Damping b1</blkName>
+            <xpcblkName>DC Motor Controller/Simulated motor/Damping b1</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Simulated motor/Damping b1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain Kt2</blkName>
+            <xpcblkName>DC Motor Controller/Simulated motor/Gain Kt2</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Simulated motor/Gain Kt2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain Kt3</blkName>
+            <xpcblkName>DC Motor Controller/Simulated motor/Gain Kt3</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Simulated motor/Gain Kt3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Inductance</blkName>
+            <xpcblkName>DC Motor Controller/Simulated motor/Inductance</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Simulated motor/Inductance</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Resistance R1</blkName>
+            <xpcblkName>DC Motor Controller/Simulated motor/Resistance R1</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Simulated motor/Resistance R1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Integrator1</blkName>
+            <xpcblkName>DC Motor Controller/Simulated motor/Integrator1</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Simulated motor/Integrator1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Integrator5</blkName>
+            <xpcblkName>DC Motor Controller/Simulated motor/Integrator5</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Simulated motor/Integrator5</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Integrator6</blkName>
+            <xpcblkName>DC Motor Controller/Simulated motor/Integrator6</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Simulated motor/Integrator6</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Back emf Ke1</sigName>
+              <xpcsigName>DC Motor Controller/Simulated motor/Back emf Ke1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Damping b1</sigName>
+              <xpcsigName>DC Motor Controller/Simulated motor/Damping b1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain Kt2</sigName>
+              <xpcsigName>DC Motor Controller/Simulated motor/Gain Kt2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain Kt3</sigName>
+              <xpcsigName>DC Motor Controller/Simulated motor/Gain Kt3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Inductance</sigName>
+              <xpcsigName>DC Motor Controller/Simulated motor/Inductance</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Resistance R1</sigName>
+              <xpcsigName>DC Motor Controller/Simulated motor/Resistance R1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Integrator1</sigName>
+              <xpcsigName>DC Motor Controller/Simulated motor/Integrator1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Integrator5</sigName>
+              <xpcsigName>DC Motor Controller/Simulated motor/Integrator5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Integrator6</sigName>
+              <xpcsigName>DC Motor Controller/Simulated motor/Integrator6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Sum1</sigName>
+              <xpcsigName>DC Motor Controller/Simulated motor/Sum1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Sum2</sigName>
+              <xpcsigName>DC Motor Controller/Simulated motor/Sum2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/Simulated motor</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>input side switching logic</Name>
+		<xPCName>Senior_Design_G4/DC Motor Controller/input side switching logic</xPCName>
+		
+		
+			  
+			  
+              <signal>
+              <sigName>complement the
+input</sigName>
+              <xpcsigName>DC Motor Controller/input side switching logic/complement the input</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/input side switching logic</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Product</sigName>
+              <xpcsigName>DC Motor Controller/input side switching logic/Product</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/input side switching logic</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Product1</sigName>
+              <xpcsigName>DC Motor Controller/input side switching logic/Product1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/input side switching logic</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>switching logic</Name>
+		<xPCName>Senior_Design_G4/DC Motor Controller/switching logic</xPCName>
+		
+		
+			  
+			  
+              <signal>
+              <sigName>complement the
+input1</sigName>
+              <xpcsigName>DC Motor Controller/switching logic/complement the input1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/switching logic</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Product2</sigName>
+              <xpcsigName>DC Motor Controller/switching logic/Product2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/switching logic</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Product3</sigName>
+              <xpcsigName>DC Motor Controller/switching logic/Product3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/switching logic</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Sum2</sigName>
+              <xpcsigName>DC Motor Controller/switching logic/Sum2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller/switching logic</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+
+		
+            <block>
+            <blkName>1 - Use simulated motor
+0 - Use real motor</blkName>
+            <xpcblkName>DC Motor Controller/1 - Use simulated motor 0 - Use real motor</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/1 - Use simulated motor 0 - Use real motor</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Kd</blkName>
+            <xpcblkName>DC Motor Controller/Kd</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Kd</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Ki</blkName>
+            <xpcblkName>DC Motor Controller/Ki</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Ki</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Kp</blkName>
+            <xpcblkName>DC Motor Controller/Kp</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Kp</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>gain</blkName>
+            <xpcblkName>DC Motor Controller/gain</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Integrator1</blkName>
+            <xpcblkName>DC Motor Controller/Integrator1</xpcblkName>
+            <SLblockPath>Senior_Design_G4/DC Motor Controller/Integrator1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>1 - Use simulated motor
+0 - Use real motor</sigName>
+              <xpcsigName>DC Motor Controller/1 - Use simulated motor 0 - Use real motor</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Derivative1</sigName>
+              <xpcsigName>DC Motor Controller/Derivative1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Kd</sigName>
+              <xpcsigName>DC Motor Controller/Kd</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Ki</sigName>
+              <xpcsigName>DC Motor Controller/Ki</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Kp</sigName>
+              <xpcsigName>DC Motor Controller/Kp</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>gain</sigName>
+              <xpcsigName>DC Motor Controller/gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+                <sigLabel>Setpoint</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Integrator1</sigName>
+              <xpcsigName>DC Motor Controller/Integrator1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Sum1</sigName>
+              <xpcsigName>DC Motor Controller/Sum1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+                <sigLabel>Error Signal</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Sum4</sigName>
+              <xpcsigName>DC Motor Controller/Sum4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/DC Motor Controller</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Data Display</Name>
+		<xPCName>Senior_Design_G4/Data Display</xPCName>
+		
+		
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Gripper Controls</Name>
+		<xPCName>Senior_Design_G4/Gripper Controls</xPCName>
+				<SubSystem>
+		<Name>If Action
+Subsystem2</Name>
+		<xPCName>Senior_Design_G4/Gripper Controls/If Action Subsystem2</xPCName>
+		
+		
+			  
+			  
+              <signal>
+              <sigName>In1</sigName>
+              <xpcsigName>Gripper Controls/If Action Subsystem2/In1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/Gripper Controls/If Action Subsystem2</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>If Action
+Subsystem3</Name>
+		<xPCName>Senior_Design_G4/Gripper Controls/If Action Subsystem3</xPCName>
+		
+		
+			  
+			  
+              <signal>
+              <sigName>In1</sigName>
+              <xpcsigName>Gripper Controls/If Action Subsystem3/In1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/Gripper Controls/If Action Subsystem3</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+
+		
+            <block>
+            <blkName>Grip</blkName>
+            <xpcblkName>Gripper Controls/Grip</xpcblkName>
+            <SLblockPath>Senior_Design_G4/Gripper Controls/Grip</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/Gripper Controls</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Ungrip</blkName>
+            <xpcblkName>Gripper Controls/Ungrip</xpcblkName>
+            <SLblockPath>Senior_Design_G4/Gripper Controls/Ungrip</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/Gripper Controls</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Merge1</sigName>
+              <xpcsigName>Gripper Controls/Merge1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/Gripper Controls</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Linear Actuator Controls</Name>
+		<xPCName>Senior_Design_G4/Linear Actuator Controls</xPCName>
+				<SubSystem>
+		<Name>If Action
+Subsystem1</Name>
+		<xPCName>Senior_Design_G4/Linear Actuator Controls/If Action Subsystem1</xPCName>
+		
+		
+			  
+			  
+              <signal>
+              <sigName>In1</sigName>
+              <xpcsigName>Linear Actuator Controls/If Action Subsystem1/In1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/Linear Actuator Controls/If Action Subsystem1</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>If Action
+Subsystem6</Name>
+		<xPCName>Senior_Design_G4/Linear Actuator Controls/If Action Subsystem6</xPCName>
+		
+		
+			  
+			  
+              <signal>
+              <sigName>In1</sigName>
+              <xpcsigName>Linear Actuator Controls/If Action Subsystem6/In1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/Linear Actuator Controls/If Action Subsystem6</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>If Action
+Subsystem7</Name>
+		<xPCName>Senior_Design_G4/Linear Actuator Controls/If Action Subsystem7</xPCName>
+		
+		
+			  
+			  
+              <signal>
+              <sigName>In1</sigName>
+              <xpcsigName>Linear Actuator Controls/If Action Subsystem7/In1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/Linear Actuator Controls/If Action Subsystem7</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+
+		
+            <block>
+            <blkName>Down</blkName>
+            <xpcblkName>Linear Actuator Controls/Down</xpcblkName>
+            <SLblockPath>Senior_Design_G4/Linear Actuator Controls/Down</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/Linear Actuator Controls</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Ld_Cll</blkName>
+            <xpcblkName>Linear Actuator Controls/Ld_Cll</xpcblkName>
+            <SLblockPath>Senior_Design_G4/Linear Actuator Controls/Ld_Cll</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/Linear Actuator Controls</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Up
+</blkName>
+            <xpcblkName>Linear Actuator Controls/Up </xpcblkName>
+            <SLblockPath>Senior_Design_G4/Linear Actuator Controls/Up </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/Linear Actuator Controls</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Merge3</sigName>
+              <xpcsigName>Linear Actuator Controls/Merge3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/Linear Actuator Controls</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Loaad Cell Output
+</Name>
+		<xPCName>Senior_Design_G4/Loaad Cell Output </xPCName>
+		
+		
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Stepper Controller</Name>
+		<xPCName>Senior_Design_G4/Stepper Controller</xPCName>
+				<SubSystem>
+		<Name>If Action
+Subsystem4</Name>
+		<xPCName>Senior_Design_G4/Stepper Controller/If Action Subsystem4</xPCName>
+		
+		
+			  
+			  
+              <signal>
+              <sigName>In1</sigName>
+              <xpcsigName>Stepper Controller/If Action Subsystem4/In1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/Stepper Controller/If Action Subsystem4</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>If Action
+Subsystem5</Name>
+		<xPCName>Senior_Design_G4/Stepper Controller/If Action Subsystem5</xPCName>
+		
+		
+			  
+			  
+              <signal>
+              <sigName>In1</sigName>
+              <xpcsigName>Stepper Controller/If Action Subsystem5/In1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/Stepper Controller/If Action Subsystem5</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+
+		
+            <block>
+            <blkName>Pulse
+Generator1</blkName>
+            <xpcblkName>Stepper Controller/Pulse Generator1</xpcblkName>
+            <SLblockPath>Senior_Design_G4/Stepper Controller/Pulse Generator1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Amplitude</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/Stepper Controller</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>Period</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/Stepper Controller</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>PulseWidth</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/Stepper Controller</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>PhaseDelay</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4/Stepper Controller</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Pulse
+Generator1</sigName>
+              <xpcsigName>Stepper Controller/Pulse Generator1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/Stepper Controller</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Merge2</sigName>
+              <xpcsigName>Stepper Controller/Merge2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4/Stepper Controller</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+
+      
+            <block>
+            <blkName>Period</blkName>
+            <xpcblkName>Period</xpcblkName>
+            <SLblockPath>Senior_Design_G4/Period</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>gripper_on</blkName>
+            <xpcblkName>gripper_on</xpcblkName>
+            <SLblockPath>Senior_Design_G4/gripper_on</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>linear_act</blkName>
+            <xpcblkName>linear_act</xpcblkName>
+            <SLblockPath>Senior_Design_G4/linear_act</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>position</blkName>
+            <xpcblkName>position</xpcblkName>
+            <SLblockPath>Senior_Design_G4/position</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>stepper_left_right</blkName>
+            <xpcblkName>stepper_left_right</xpcblkName>
+            <SLblockPath>Senior_Design_G4/stepper_left_right</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>stepper_on_off</blkName>
+            <xpcblkName>stepper_on_off</xpcblkName>
+            <SLblockPath>Senior_Design_G4/stepper_on_off</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>Gain</xpcblkName>
+            <SLblockPath>Senior_Design_G4/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Quantizer</blkName>
+            <xpcblkName>Quantizer</xpcblkName>
+            <SLblockPath>Senior_Design_G4/Quantizer</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>QuantizationInterval</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>load_cell</blkName>
+            <xpcblkName>load_cell</xpcblkName>
+            <SLblockPath>Senior_Design_G4/load_cell</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>QuantizationInterval</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Q4 AD</blkName>
+            <xpcblkName>Q4 AD</xpcblkName>
+            <SLblockPath>Senior_Design_G4/Q4 AD</SLblockPath>
+            <isSrc>[1 0 2]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 2]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 2]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Q4 Cnt </blkName>
+            <xpcblkName>Q4 Cnt </xpcblkName>
+            <SLblockPath>Senior_Design_G4/Q4 Cnt </SLblockPath>
+            <isSrc>[0 4 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 2]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 2]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 2]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 2]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 2]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 2]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Q4 DO </blkName>
+            <xpcblkName>Q4 DO </xpcblkName>
+            <SLblockPath>Senior_Design_G4/Q4 DO </SLblockPath>
+            <isSrc>[0 2 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 2]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 2]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 2]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>Senior_Design_G4</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Period</sigName>
+              <xpcsigName>Period</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>stepper_left_right</sigName>
+              <xpcsigName>stepper_left_right</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Gain</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Quantizer</sigName>
+              <xpcsigName>Quantizer</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>load_cell</sigName>
+              <xpcsigName>load_cell</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Q4 AD/p1</sigName>
+              <xpcsigName>Q4 AD/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Q4 AD/p2</sigName>
+              <xpcsigName>Q4 AD/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>Senior_Design_G4</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+</Root>
